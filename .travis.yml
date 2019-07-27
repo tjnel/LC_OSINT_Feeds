@@ -10,7 +10,7 @@ install:
 script:
   - python3 src/generate_urlhaus_list.py
   - python3 src/generate_bambenek_list.py
-  -
+
 after_success:
 - rm -rf .git/
 - git init
