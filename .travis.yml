@@ -14,6 +14,7 @@ script:
 after_success:
   - git config --global push.default simple
   - git config user.name "tjnel"
+  - git remote set-url origin tjnel@github.com:tjnel/LC_OSINT_Feeds.git
   - git remote add origin https://${GITHUB_TOKEN}@github.com/tjnel/LC_OSINT_Feeds.git
   - git add .
   - git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
